@@ -98,7 +98,7 @@ const Contact = () => {
                         </div>
 
                         <div style={{ marginTop: '40px', display: 'flex', gap: '20px' }}>
-                            <a href="#" style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaLinkedin /></a>
+                            <a href="https://www.linkedin.com/in/satheeshvaran-l-b07bb8298/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaLinkedin /></a>
                             <a href="#" style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaGithub /></a>
                             <a href="#" style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaTwitter /></a>
                         </div>
