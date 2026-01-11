@@ -68,7 +68,7 @@ const Hero = () => {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        boxShadow: '0 0 30px rgba(56, 189, 248, 0.3)'
+                        boxShadow: '0 0 50px rgba(0, 255, 163, 0.4), 0 0 20px rgba(0, 210, 255, 0.3)'
                     }}>
                         <div style={{
                             width: '340px',
