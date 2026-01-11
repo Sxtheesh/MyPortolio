@@ -25,15 +25,10 @@ const About = () => {
                     >
                         <div style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
                             <p style={{ marginBottom: '20px' }}>
-                                I have hands-on experience with Amazon Web Services (AWS) and core DevOps tools.
-                                I work with services like EC2, S3, IAM, VPC, CloudWatch, and have a solid
-                                understanding of Linux systems and networking fundamentals.
+                               I am a beginner in cloud computing and DevOps, currently learning and building hands-on experience with Amazon Web Services (AWS) and core DevOps tools. I have worked with services such as EC2, S3, IAM, VPC, and CloudWatch, and I am developing a foundational understanding of Linux systems and networking concepts.
                             </p>
                             <p style={{ marginBottom: '20px' }}>
-                                I enjoy learning new technologies, solving infrastructure problems, and improving
-                                system reliability through automation. I am currently seeking an entry-level
-                                Cloud or DevOps Engineer role where I can apply my skills, grow professionally,
-                                and contribute to real-world cloud projects.
+                               I enjoy learning new technologies, exploring how cloud infrastructure works, and practicing automation to improve system reliability. I am actively building my skills through learning, experimentation, and small projects. I am seeking an entry-level Cloud or DevOps Engineer role where I can continue learning, gain real-world experience, and contribute to cloud-based projects while growing professionally.
                             </p>
 
                             <div style={{ marginTop: '30px' }}>

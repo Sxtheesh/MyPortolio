@@ -63,12 +63,12 @@ const Hero = () => {
                         width: '350px',
                         height: '350px',
                         borderRadius: '50%',
-                        background: 'linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color))',
+                        background: 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))',
                         position: 'relative',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        boxShadow: '0 0 50px rgba(0, 255, 163, 0.4), 0 0 20px rgba(0, 210, 255, 0.3)'
+                        boxShadow: '0 0 50px rgba(255, 170, 0, 0.3), 0 0 20px rgba(255, 60, 0, 0.2)'
                     }}>
                         <div style={{
                             width: '340px',
