@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter, FaPaperPlane, FaFileAlt } from 'react-icons/fa';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -149,6 +149,31 @@ const Contact = () => {
                                 <FaGithub />
                             </a>
 
+                            <a
+                                href="/resume.pdf"
+                                download="Satheeshvaran_Resume.pdf"
+                                style={{
+                                    fontSize: '2rem',
+                                    color: 'var(--text-secondary)',
+                                    transition: 'all 0.3s ease',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    textDecoration: 'none',
+                                    cursor: 'pointer'
+                                }}
+                                onMouseOver={(e) => {
+                                    e.currentTarget.style.color = '#ff007a'; // Pink/Red for PDF
+                                    e.currentTarget.style.transform = 'translateY(-3px)';
+                                }}
+                                onMouseOut={(e) => {
+                                    e.currentTarget.style.color = 'var(--text-secondary)';
+                                    e.currentTarget.style.transform = 'translateY(0)';
+                                }}
+                                title="Download Resume"
+                            >
+                                <FaFileAlt />
+                            </a>
                         </div>
                     </motion.div>
 
