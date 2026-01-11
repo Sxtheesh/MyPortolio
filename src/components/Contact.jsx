@@ -148,7 +148,7 @@ const Contact = () => {
                             >
                                 <FaGithub />
                             </a>
-                            <a href="#" style={{ fontSize: '2rem', color: 'var(--text-secondary)', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaTwitter /></a>
+
                         </div>
                     </motion.div>
 
