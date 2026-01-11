@@ -98,9 +98,33 @@ const Contact = () => {
                         </div>
 
                         <div style={{ marginTop: '40px', display: 'flex', gap: '20px' }}>
-                            <a href="https://www.linkedin.com/in/satheeshvaran-l-b07bb8298/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaLinkedin /></a>
-                            <a href="#" style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaGithub /></a>
-                            <a href="#" style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaTwitter /></a>
+                            <a
+                                href="https://www.linkedin.com/in/satheeshvaran-l-b07bb8298/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    fontSize: '2rem',
+                                    color: 'var(--text-secondary)',
+                                    transition: 'all 0.3s ease',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    textDecoration: 'none',
+                                    cursor: 'pointer'
+                                }}
+                                onMouseOver={(e) => {
+                                    e.currentTarget.style.color = '#0077b5'; // LinkedIn Blue
+                                    e.currentTarget.style.transform = 'translateY(-3px)';
+                                }}
+                                onMouseOut={(e) => {
+                                    e.currentTarget.style.color = 'var(--text-secondary)';
+                                    e.currentTarget.style.transform = 'translateY(0)';
+                                }}
+                            >
+                                <FaLinkedin />
+                            </a>
+                            <a href="#" style={{ fontSize: '2rem', color: 'var(--text-secondary)', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaGithub /></a>
+                            <a href="#" style={{ fontSize: '2rem', color: 'var(--text-secondary)', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaTwitter /></a>
                         </div>
                     </motion.div>
 
