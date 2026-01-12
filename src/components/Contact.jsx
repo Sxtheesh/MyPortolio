@@ -150,29 +150,76 @@ const Contact = () => {
                             </a>
 
                             <a
-                                href="/resume.pdf"
-                                download="Satheeshvaran_Resume.pdf"
+                                href="/Resume_me.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 style={{
-                                    fontSize: '2rem',
-                                    color: 'var(--text-secondary)',
-                                    transition: 'all 0.3s ease',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
                                     textDecoration: 'none',
-                                    cursor: 'pointer'
+                                    cursor: 'pointer',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    gap: '8px',
+                                    transition: 'all 0.3s ease'
                                 }}
                                 onMouseOver={(e) => {
-                                    e.currentTarget.style.color = '#ff007a'; // Pink/Red for PDF
-                                    e.currentTarget.style.transform = 'translateY(-3px)';
+                                    e.currentTarget.style.transform = 'translateY(-5px)';
                                 }}
                                 onMouseOut={(e) => {
-                                    e.currentTarget.style.color = 'var(--text-secondary)';
                                     e.currentTarget.style.transform = 'translateY(0)';
                                 }}
                                 title="Download Resume"
                             >
-                                <FaFileAlt />
+                                <div style={{
+                                    width: '60px',
+                                    height: '75px',
+                                    position: 'relative',
+                                    background: 'linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05))',
+                                    borderRadius: '8px',
+                                    border: '1px solid rgba(255,255,255,0.2)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    backdropFilter: 'blur(10px)',
+                                    boxShadow: '0 10px 20px rgba(0,0,0,0.3), inset 0 0 15px rgba(0, 255, 163, 0.1)'
+                                }}>
+                                    {/* Folded Corner Effect */}
+                                    <div style={{
+                                        position: 'absolute',
+                                        top: '-1px',
+                                        right: '-1px',
+                                        width: '20px',
+                                        height: '20px',
+                                        background: 'linear-gradient(225deg, transparent 50%, rgba(255,255,255,0.2) 50%)',
+                                        borderBottomLeftRadius: '8px',
+                                        border: '1px solid rgba(255,255,255,0.1)'
+                                    }}></div>
+
+                                    {/* PDF Label */}
+                                    <div style={{
+                                        position: 'absolute',
+                                        bottom: '10px',
+                                        left: '50%',
+                                        transform: 'translateX(-50%)',
+                                        background: 'var(--primary-color)',
+                                        color: '#000',
+                                        fontSize: '0.7rem',
+                                        fontWeight: 'bold',
+                                        padding: '2px 6px',
+                                        borderRadius: '4px',
+                                        boxShadow: '0 0 10px var(--primary-color)'
+                                    }}>PDF</div>
+
+                                    {/* Document Lines Icon */}
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                </div>
+                                <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: '500' }}>Resume</span>
                             </a>
                         </div>
                     </motion.div>

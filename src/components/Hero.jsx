@@ -47,6 +47,9 @@ const Hero = () => {
                         <Link to="projects" smooth={true} duration={500} offset={-70}>
                             <button className="btn btn-primary">View Work</button>
                         </Link>
+                        <a href="/Resume_me.pdf" target="_blank" rel="noopener noreferrer">
+                            <button className="btn btn-outline">Download CV</button>
+                        </a>
                         <Link to="contact" smooth={true} duration={500} offset={-70}>
                             <button className="btn btn-outline">Contact Me</button>
                         </Link>

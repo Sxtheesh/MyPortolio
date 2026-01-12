@@ -29,19 +29,19 @@ const Navbar = () => {
   ];
 
   return (
-    <nav 
-         style={{ 
-           position: 'fixed', 
-           top: 0, 
-           left: 0, 
-           right: 0, 
-           zIndex: 1000,
-           padding: scrolled ? '15px 0' : '25px 0',
-           background: scrolled ? 'rgba(5, 5, 5, 0.9)' : 'transparent',
-           backdropFilter: scrolled ? 'blur(10px)' : 'none',
-           borderBottom: scrolled ? '1px solid rgba(255,255,255,0.05)' : 'none',
-           transition: 'all 0.3s ease'
-         }}>
+    <nav
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        padding: scrolled ? '15px 0' : '25px 0',
+        background: scrolled ? 'rgba(5, 5, 5, 0.9)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(10px)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(255,255,255,0.05)' : 'none',
+        transition: 'all 0.3s ease'
+      }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div className="logo" style={{ fontSize: '1.8rem', fontWeight: 'bold', cursor: 'pointer' }}>
           <span className="gradient-text">Portfolio.</span>
@@ -75,7 +75,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="mobile-menu"
@@ -108,7 +108,7 @@ const Navbar = () => {
           ))}
         </motion.div>
       )}
-      
+
       <style>{`
         @media (max-width: 768px) {
           .desktop-menu { display: none !important; }
